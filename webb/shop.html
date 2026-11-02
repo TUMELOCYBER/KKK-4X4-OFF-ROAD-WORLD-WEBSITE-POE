@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--
+  KKK 4x4 World - Shop Page
+  Purpose: Product catalogue of 4x4 accessories (winches, bumpers, racks, lights, suspension).
+  References / Image assets used:
+    - Hero: _images/off road wallp.jpg
+    - Products: winches, bumpers, roll bars, bed racks, side steps, roof racks, lights, suspension
+    - Styles: css_assets/style.css
+    - Scripts: js_assets/script.js (Add-to-Cart button feedback)
+  Notes:
+    - Prices are in South African Rand (R).
+    - "Add to Cart" is currently front-end only (visual feedback + console log).
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKK 4x4 World - Shop</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="logo-area">
+                <img src="_images/Pegatina 4x4 Off Road con Tipografía Racing.jpg" alt="4X4 Off-Road" class="logo-image">
+                <h1>KKK 4x4 WORLD</h1>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <img src="_images/menu (1).svg" alt="Menu">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== SHOP HERO ========== -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Discover Your Dream 4x4 Build</h1>
+            <img src="_images/off road wallp.jpg" class="hero-image" alt="Off-Road Bakkie">
+            <p>Make it your dream come true.</p>
+            <!-- Smooth-scrolls to #products via script.js -->
+            <a href="#products" class="hero-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCT CATALOGUE ========== -->
+    <main>
+        <section class="shop-section" id="products">
+            <h1 class="orange-title">OUR 4X4 GEAR SHOP</h1>
+            <p class="orange-title">EQUIP YOUR 4x4 WITH THE BEST OFF-ROAD ACCESSORIES.</p>
+
+            <div class="product-container">
+                <!-- Product 1: Winch -->
+                <div class="product-card">
+                    <img src="_images/winch.jpg" alt="Heavy Duty Winch" class="product-image">
+                    <h3>Heavy Duty 12,000lb Winch</h3>
+                    <p>Waterproof synthetic rope winch for ultimate recovery power.</p>
+                    <p><strong>Price:</strong> R4,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 2: Winch -->
+                <div class="product-card">
+                    <img src="_images/Winch (2).jpg" alt="Heavy Duty Winch" class="product-image">
+                    <h3>X-BULL Heavy Duty 14,500lb Winch</h3>
+                    <p>High-strength steel cable winch for demanding recovery situations.</p>
+                    <p><strong>Price:</strong> R8,499.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 3: Winch -->
+                <div class="product-card">
+                    <img src="_images/Winch (3).jpg" alt="Heavy Duty Winch" class="product-image">
+                    <h3>SMITTYBUILT Heavy Duty 15,500lb Winch</h3>
+                    <p>Ultra-high-strength winch for the most demanding recovery scenarios.</p>
+                    <p><strong>Price:</strong> R11,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 4: Bumper -->
+                <div class="product-card">
+                    <img src="_images/bumper 2.jpg" alt="Stainless Steel Bumper" class="product-image">
+                    <h3>Stainless Steel Bumper with light bar</h3>
+                    <p>Premium stainless steel bumper for enhanced protection.</p>
+                    <p><strong>Price:</strong> R39,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 5: Bumper -->
+                <div class="product-card">
+                    <img src="_images/bumper 3.jpg" alt="Stainless Steel Bumper" class="product-image">
+                    <h3>Go Rhino Titanium Bumper with winch holder</h3>
+                    <p>Premium titanium bumper for maximum durability.</p>
+                    <p><strong>Price:</strong> R65,000.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 6: Bumper -->
+                <div class="product-card">
+                    <img src="_images/bumper.jpg" alt="Stainless Steel Bumper" class="product-image">
+                    <h3>AP Titanium & Steel Bumper with winch holder and light bar</h3>
+                    <p>Premium combination of titanium and steel for unmatched strength and style.</p>
+                    <p><strong>Price:</strong> R66,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 7: Roll Bar / Chase Rack -->
+                <div class="product-card">
+                    <img src="_images/ROADER Tundra Bed Chase Rack Roll Bar for Toyota Tundra 2022-2024, Molle Panel Modular Storage Headache Rack Cargo, Black Steel Frame.jpg" alt="Roll Bar" class="product-image">
+                    <h3>ROADER Toyota Bed Chase Rack Roll Bar</h3>
+                    <p>Premium roll bar for enhanced protection and style.</p>
+                    <p><strong>Price:</strong> R54,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 8: Bed Rack -->
+                <div class="product-card">
+                    <img src="_images/Bed Rack.jpg" alt="Bed Rack" class="product-image">
+                    <h3>KK Steel Bed Rack</h3>
+                    <p>Premium steel bed rack for maximum durability & safety.</p>
+                    <p><strong>Price:</strong> R50,000.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 9: Roll Bar -->
+                <div class="product-card">
+                    <img src="_images/GEEMERLOX .jpg" alt="GEEMERLOX Roll Bar" class="product-image">
+                    <h3>GEEMERLOX Roll Bar</h3>
+                    <p>High class roll bar for enhanced protection and design.</p>
+                    <p><strong>Price:</strong> R48,000.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 10: Side Steps -->
+                <div class="product-card">
+                    <img src="_images/Side step2.jpg" alt="Stainless Steel Side Step" class="product-image">
+                    <h3>FJ Cruiser Stainless Steel Side Steps</h3>
+                    <p>Premium stainless steel side step for easy access and style.</p>
+                    <p><strong>Price:</strong> R34,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 11: Side Steps -->
+                <div class="product-card">
+                    <img src="_images/Side steps.jpg" alt="Stainless Steel Side Step" class="product-image">
+                    <h3>ODRO Stainless Steel Side Steps</h3>
+                    <p>Quality stainless steel side steps for easy access.</p>
+                    <p><strong>Price:</strong> R24,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 12: Side Steps -->
+                <div class="product-card">
+                    <img src="_images/YZONA Side Steps.jpg" alt="YZONA Side Steps" class="product-image">
+                    <h3>YZONA Stainless Steel & Titanium Side Steps</h3>
+                    <p>Premium stainless steel and titanium side steps for enhanced protection and style.</p>
+                    <p><strong>Price:</strong> R45,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 13: Roof Rack -->
+                <div class="product-card">
+                    <img src="_images/roof rack1.jpg" alt="Steel Roof Rack" class="product-image">
+                    <h3>4X4 Steel Roof Rack</h3>
+                    <p>Premium steel roof rack for maximum cargo capacity.</p>
+                    <p><strong>Price:</strong> R39,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 14: Roof Rack -->
+                <div class="product-card">
+                    <img src="_images/Roof Racks2.jpg" alt="Stainless Steel Roof Racks" class="product-image">
+                    <h3>FOX Roof Racks</h3>
+                    <p>Premium stainless steel roof racks for enhanced functionality.</p>
+                    <p><strong>Price:</strong> R34,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 15: Roof Rack + Side Steps -->
+                <div class="product-card">
+                    <img src="_images/Roof racks3.jpg" alt="Stainless Steel Roof Racks" class="product-image">
+                    <h3>OSDRO Stainless Steel Roof Racks with side steps</h3>
+                    <p>Premium stainless steel roof racks with integrated side steps for easy access.</p>
+                    <p><strong>Price:</strong> R54,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 16: Lighting -->
+                <div class="product-card">
+                    <img src="_images/Flood Ditch light.jpg" alt="Flood Ditch Light" class="product-image">
+                    <h3>NACHO PRO SERIES Flood Ditch Light</h3>
+                    <p>Ultra-high-strength Flood Ditch Light for maximum visibility.</p>
+                    <p><strong>Price:</strong> R11,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 17: Lighting -->
+                <div class="product-card">
+                    <img src="_images/Visorak LED LIGHTS.jpg" alt="Visorak LED Lights" class="product-image">
+                    <h3>Visorak LED Lights</h3>
+                    <p>Premium LED lights for enhanced visibility.</p>
+                    <p><strong>Price:</strong> R8,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 18: Lighting -->
+                <div class="product-card">
+                    <img src="_images/Spotlights.jpg" alt="Spotlights" class="product-image">
+                    <h3>NACHO N SERIES Spotlights</h3>
+                    <p>Premium spotlights for enhanced visibility and performance.</p>
+                    <p><strong>Price:</strong> R15,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 19: Suspension -->
+                <div class="product-card">
+                    <img src="_images/CoilOver.jpg" alt="Suspension Upgrade" class="product-image">
+                    <h3>FOX Coil Overs / Suspension</h3>
+                    <p>Premium coil overs for enhanced suspension performance.</p>
+                    <p><strong>Price:</strong> R45,000.00</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <!-- Product 20: Suspension -->
+                <div class="product-card">
+                    <img src="_images/Suspension.jpg" alt="Suspension Upgrade" class="product-image">
+                    <h3>FOX PRO SERIES Coil Overs / Suspension</h3>
+                    <p>Quality coil overs for superior suspension performance.</p>
+                    <p><strong>Price:</strong> R54,999.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <p style="text-align:center; padding: 15px 0;">Catch us on these following platforms.</p>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-or-nav">
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </nav>
+            <div class="footer-copyright">
+                <p class="orange-title">&copy; 2026 KKK 4x4 World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>

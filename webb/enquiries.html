@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+  KKK 4x4 World - Enquiries Page
+  Purpose: Dedicated form for vehicle setup, parts, and technical enquiries.
+  References:
+    - Logo image: _images/Pegatina 4x4 Off Road con Tipografía Racing.jpg
+    - Styles: css_assets/style.css
+    - Scripts: js_assets/script.js (handles form validation)
+  Notes:
+    - Form action is currently "#". Connect to a backend or email service for production.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKK 4x4 World - Enquiries</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header>
+        <nav class="navbar" aria-label="Primary navigation">
+            <div class="logo-area">
+                <img src="_images/Pegatina 4x4 Off Road con Tipografía Racing.jpg" alt="4X4 Off-Road" class="logo-image">
+                <h1>KKK 4x4 WORLD</h1>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <img src="_images/menu (1).svg" alt="Menu">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT – ENQUIRY FORM ========== -->
+    <main>
+        <section class="enquiry-section">
+            <h1>Vehicle Setup & Parts Enquiries</h1>
+            <p>Looking for a custom build, specific fitment, or bulk orders? Fill out the form below and our technical team will review your specs.</p>
+
+            <div class="enquiry-form">
+                <form action="#" method="POST">
+                    <!-- Section 1: Customer contact details -->
+                    <h3>1. Your Details</h3>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <!-- Section 2: Vehicle information -->
+                    <h3>2. Vehicle Information</h3>
+                    <label for="vehicle-make">Vehicle Make & Model (e.g., Toyota Hilux, Ford Ranger):</label>
+                    <input type="text" id="vehicle-make" name="vehicle_make" placeholder="Year, Make, Model" required>
+
+                    <!-- Section 3: Enquiry type + free-text details -->
+                    <h3>3. Request Details</h3>
+                    <label for="enquiry-type">Enquiry Type:</label>
+                    <select id="enquiry-type" name="enquiry_type" required>
+                        <option value="">-- Select Option --</option>
+                        <option value="custom-build">Custom Rig Build Consultation</option>
+                        <option value="part-availability">Specific Part Availability</option>
+                        <option value="installation">Suspension / Bar Work Installation</option>
+                        <option value="wholesale">Wholesale & Fleet Pricing</option>
+                        <option value="other">Other Technical Query</option>
+                    </select>
+
+                    <label for="details">Provide Details of your Request:</label>
+                    <textarea id="details" name="enquiry_details" rows="6" placeholder="Describe the parts required or modification goals..." required></textarea>
+
+                    <button type="submit">Submit Enquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <p style="text-align:center; padding: 15px 0;">Follow us on these platforms.</p>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-or-nav">
+            <nav class="footer-nav" aria-label="Social media links">
+                <ul>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </nav>
+            <div class="footer-copyright">
+                <p class="orange-title">&copy; 2026 KKK 4x4 World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>

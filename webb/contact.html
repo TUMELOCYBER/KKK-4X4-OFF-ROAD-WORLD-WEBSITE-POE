@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+  KKK 4x4 World - Contact Page
+  Purpose: Display business contact details, embedded maps, and a contact form.
+  References / External Resources:
+    - Google Maps Embed API (two locations):
+      1. 43 Mosehle Lane, Adventure City 0122
+      2. Dudu Madisha Dr, Mokopane 0601
+    - Logo image: _images/Pegatina 4x4 Off Road con Tipografía Racing.jpg
+    - Styles: css_assets/style.css
+    - Scripts: js_assets/script.js (handles form validation)
+  Notes:
+    - Form currently uses action="#" and is validated client-side only.
+    - Replace placeholder social links and form action with real endpoints when ready.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKK 4x4 World - Contact</title>
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo-area">
+                <img src="_images/Pegatina 4x4 Off Road con Tipografía Racing.jpg" alt="4X4 Off-Road" class="logo-image">
+                <h1>KKK 4x4 WORLD</h1>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <img src="_images/menu (1).svg" alt="Menu">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT – CONTACT ========== -->
+    <main>
+        <section class="contact-section">
+            <h1>Contact KKK 4x4 World</h1>
+            <p>Have questions about gear, setups, or an order? Get in touch with our off-road experts.</p>
+
+            <!-- Business details + embedded maps -->
+            <div class="contact-info">
+                <h2>Our Details</h2>
+
+                <!-- Map 1: Adventure City location -->
+                <!-- Source: Google Maps Embed API -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d460135.8037395489!2d28.048190028684967!3d-25.710682096653816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s43%20Mosehle%20Lane%2C%20Adventure%20City%200122!5e0!3m2!1sen!2sza!4v1793633930221!5m2!1sen!2sza"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Map showing the location of KKK 4x4 World">
+                </iframe>
+                <p><strong>Address:</strong> 43 Mosehle Lane, Adventure City 0122</p>
+
+                <!-- Map 2: Mokopane location -->
+                <!-- Source: Google Maps Embed API -->
+                <p><strong>Address:</strong> Dudu Madisha street, Mokopane 0601</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.1626218128777!2d28.991869175258284!3d-24.166028884084916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec74b30f7629fdd%3A0x566d5c10d630fa01!2sDudu%20Madisha%20Dr!5e0!3m2!1sen!2sza!4v1793635264777!5m2!1sen!2sza"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Map showing the Dudu Madisha Dr location">
+                </iframe>
+
+                <p><strong>Phone:</strong> +27 012-019-2834</p>
+                <p><strong>Email:</strong> support@kkk4x4world.com</p>
+                <p><strong>Hours:</strong> Mon - Sat: 08:00 - 18:00</p>
+            </div>
+
+            <!-- Contact form (client-side validation in script.js) -->
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <p style="text-align:center; padding: 15px 0;">Follow us on these platforms.</p>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-or-nav">
+            <nav class="footer-nav" aria-label="Social media">
+                <ul>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </nav>
+            <div class="footer-copyright">
+                <p>&copy; 2026 KKK 4x4 World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js_assets/script.js"></script>
+</body>
+</html>

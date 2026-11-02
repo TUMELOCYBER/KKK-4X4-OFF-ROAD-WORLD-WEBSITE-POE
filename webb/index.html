@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  KKK 4x4 World - Home Page
+  Purpose: Landing page introducing the brand and directing users to the shop.
+  References:
+    - Logo image: _images/Pegatina 4x4 Off Road con Tipografía Racing.jpg
+    - Hero images: _images/hilux.jpg, _images/Off-Road 4x4.jpg
+    - Styles: css_assets/style.css
+    - Scripts: js_assets/script.js
+  Accessibility: Uses aria-label on navigation for screen readers.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKK 4x4 World - Home</title>
+    <!-- Main stylesheet (shared across all pages) -->
+    <link rel="stylesheet" href="css_assets/style.css">
+</head>
+<body>
+    <!-- ========== HEADER / NAVIGATION ========== -->
+    <!-- Sticky orange navbar with logo, primary links, and mobile hamburger -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <!-- Brand logo + site title -->
+            <div class="logo-area">
+                <img src="_images/Pegatina 4x4 Off Road con Tipografía Racing.jpg" alt="4X4 Off-Road" class="logo-image">
+                <h1>KKK 4x4 WORLD</h1>
+            </div>
+
+            <!-- Primary navigation links (hidden on mobile until hamburger is toggled) -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+
+            <!-- Mobile menu toggle button -->
+            <div class="nav-right">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <img src="_images/menu (1).svg" alt="Menu">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <!-- Main call-to-action area with headline, supporting images, and CTA button -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>DISCOVER YOUR DREAM 4X4 BUILD</h1>
+            <p>MAKE IT YOUR DREAM COME TRUE.</p>
+
+            <!-- Side-by-side (or stacked on mobile) hero images -->
+            <div class="image-gallery">
+                <img src="_images/hilux.jpg" class="hero-image" alt="Hilux">
+                <img src="_images/Off-Road 4x4.jpg" class="hero-image" alt="Off-Road 4x4">
+            </div>
+
+            <!-- CTA linking to the shop page -->
+            <a href="shop.html" class="hero-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <!-- Social links bar + copyright notice -->
+    <footer class="site-footer">
+        <div class="footer-or-nav">
+            <nav class="footer-nav" aria-label="Social media">
+                <ul>
+                    <!-- Placeholder social links – replace # with real profile URLs when available -->
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                </ul>
+            </nav>
+            <div class="footer-copyright">
+                <p class="orange-title">&copy; 2026 KKK 4x4 World. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shared site JavaScript (hamburger, form validation, cart feedback, etc.) -->
+    <script src="js_assets/script.js"></script>
+</body>
+</html>
